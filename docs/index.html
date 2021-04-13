@@ -68,8 +68,8 @@ function resized(){
   }
 }
 
-var blobimg = null;
 function imagePaste( event ){
+  var blobimg = null;
   var items = ( event.clipboardData || event.originalEvent.clipboardData ).items;
   for( var i = 0; i < items.length; i ++ ){
     if( items[i].type.indexOf( "image" ) == 0 ){
