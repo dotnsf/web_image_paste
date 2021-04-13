@@ -34,8 +34,16 @@ body{
 .navbar{
   background-color: #cccccc;
 }
+#cdiv{
+  text-align: center;
+}
 #mycanvas{
   border: 1px solid #333;
+}
+#box{
+  color: #fff; 
+  background-color: #808; 
+  width: 100px;
 }
 </style>
 <script>
@@ -103,8 +111,10 @@ function imagePaste( event ){
 
 <div class="container">
   <div id="canvas_div">
-    <div id="cdiv" style="text-align: center;">
-      <div id="box" contenteditable="true" style="color: #fff; background-color: #808; width: 100px;">ペースト</div>
+    <div id="cdiv">
+      <div id="box" contenteditable="true">
+        ペースト
+      </div>
       <canvas width="80%" height="60%" id="mycanvas"></canvas>
     </div>
   </div>
